@@ -16,7 +16,9 @@ const NewItem = ({onAddItem}: {onAddItem: any}) => {
       );
       return;
     }
-    <Item name={name} quantity={quantity} category={category}/>;
+    <Item name={name} quantity={quantity} category={category} onSelect={function (): void {
+      throw new Error("Function not implemented here.");
+    } }/>;
     console.log(Item);
 
     const newItem ={
